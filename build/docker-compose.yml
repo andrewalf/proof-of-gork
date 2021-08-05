@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  pow_server:
+    build:
+      context: ../
+      dockerfile: ./build/server/Dockerfile
+  pow_client:
+    build:
+      context: ../
+      dockerfile: ./build/client/Dockerfile
+    depends_on:
+      - pow_server
