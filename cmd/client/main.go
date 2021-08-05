@@ -23,7 +23,7 @@ func main() {
 	defer t.Stop()
 
 	for range t.C {
-		// func here dut to defer usage
+		// func here due to defer usage
 		func() {
 			// first tcp connection
 			conn1, e := net.Dial("tcp", host+":"+port)
