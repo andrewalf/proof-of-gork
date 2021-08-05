@@ -1,3 +1,15 @@
+# Пример вывода клиента
+```
+pow_client_1  | sending gimme request...
+pow_client_1  | pow challenge: UVg42gMtUv-3-ae42df0422d745e55512c86f0c2e995e3c32cbc86e59036c5ba488b4c1f4b866
+pow_client_1  | solution found: UVg42gMtUv-5089239-ae42df0422d745e55512c86f0c2e995e3c32cbc86e59036c5ba488b4c1f4b866
+pow_client_1  | hash : 000�D]JKW���\Ev�m\�����R ����,�L�;�
+pow_client_1  | time spent: 11.7048415s
+pow_client_1  | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pow_client_1  | The world is round so that friendship may encircle it. (Pierre Teilhard de Chardin)
+pow_client_1  | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
+
 # Как запустить
 
 Первые два шага можно пропустить если нет [проблем с шагом 3](https://github.com/docker/buildx/issues/476)
