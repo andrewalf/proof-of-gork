@@ -47,7 +47,7 @@ with "tcp-connection-opening" long-living requests that just hangs and does noth
 At the design stage, I forgot about the protection from already used challenges. As a result, a challenge and its solution can be used in any amount of requests. I have no time to fix this because I already have to send the solution to HR.
 How it's possible to be fixed: adding one more parameter - timestamp of the challenge generation time. The server has one more param too - TTL of the challenge. The timestamp must be used in mac generation process because it must be validated that it's not changed by the client **(server has no state and he sends all needed data to the client and expects it back)**.After receiving the solution and mac validating server ignores the request if *ts + TTL <= now*.
 
-There's one more question: if the client is lucky and he managed to find the solution very quickly, he can use it N times while TTl is valid.
+There's one more question: if the client is lucky and he managed to find the solution very quickly, he can use it N times while TTL is valid.
 This can be fixed by storing a list of generated tasks on serverside and constantly refreshing this list by removing challenges that are out of TTL.
 To improve memory usage we can use a bloom filter for this if the server is under a heavy load and there are tons of challenges generated
 
