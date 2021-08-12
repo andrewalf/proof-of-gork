@@ -40,7 +40,7 @@ contains N leading zeros**
 
 Server tries to close the TCP connection as soon as possible, so the client has to open a new connection for every request.
 Receive a challenge - open connection. Send solution - open connection. That's obvious, otherwise what is the role of PoW if it's possible to spam
-with "tcp-connection-opening" long-living request that just hangs and does nothing and the server will be out of memory.
+with "tcp-connection-opening" long-living requests that just hangs and does nothing and the server will be out of memory.
 
 # There is one problem
 
